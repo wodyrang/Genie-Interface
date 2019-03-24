@@ -1,0 +1,36 @@
+= Interface Server ProductService REST API Docs
+127.0.0.1:5555/api/product
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+
+[[introduction]]
+== 소개
+
+Interface Server ProductService REST API Docs
+
+[[common]]
+== 공통 사항
+
+API 관계없는 공통사항입니다.
+
+=== Domain
+
+|===
+| 환경 | domain
+
+| local
+| `127.0.0.1:8080/**`
+| API Gateway
+| `127.0.0.1:5555/api/product/**`
+|===
+
+= 상품
+== 상품 조회
+include::{snippets}/product-controller-test/상품_상세/http-request.adoc[]
+include::{snippets}/product-controller-test/상품_상세/path-parameters.adoc[]
+include::{snippets}/product-controller-test/상품_상세/http-response.adoc[]
+include::{snippets}/product-controller-test/상품_상세/response-fields.adoc[]

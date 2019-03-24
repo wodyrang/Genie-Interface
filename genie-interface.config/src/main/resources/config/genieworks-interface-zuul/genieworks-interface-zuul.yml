@@ -1,0 +1,6 @@
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    genie-interface-product: /product/**
+    orderservice: /order/**

@@ -1,0 +1,24 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-local.ginterface.co.kr:38761/eureka/
+
+logging:
+  level:
+    com.netflix: DEBUG
+    org.springframework.web: DEBUG
+    com.genieworks.interface.product: DEBUG
+
+server:
+  error:
+    include-exception: true
+  port: 38000

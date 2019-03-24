@@ -1,0 +1,31 @@
+server:
+  port: 38888
+
+spring:
+  profiles:
+    active: native
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        native:
+          search-locations: classpath:config/,classpath:config/orderservice, classpath:config/genieworks-interface-product, classpath:config/genieworks-interface-zuul
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-local.ginterface.co.kr:38761/eureka/
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.genieworks.ginterface.config: DEBUG

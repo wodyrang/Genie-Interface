@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: genieworks-interface-zuul
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+    url: http://config-local.ginterface.co.kr:38888

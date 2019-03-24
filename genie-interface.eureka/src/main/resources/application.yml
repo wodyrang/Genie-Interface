@@ -1,0 +1,22 @@
+server:
+  port: 38761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  serviceUrl:
+    defaultZone: http://eureka-local.ginterface.co.kr:38761
+spring:
+  output:
+    ansi:
+      enabled: always
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.genieworks.ginterface.eureka: DEBUG

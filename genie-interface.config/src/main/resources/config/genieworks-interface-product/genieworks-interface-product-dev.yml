@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+        enable_lazy_load_no_trans: true
+    open-in-view: false
+  main:
+    allow-bean-definition-overriding: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  output:
+    ansi:
+      enabled: ALWAYS
+
+server:
+  port: 38000
+slack:
+  enabled: true
+  name: Product Server
+  webhook:
+    url: "https://hooks.slack.com/services/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"
