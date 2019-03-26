@@ -21,6 +21,9 @@ public class ProductApiController {
 
     @GetMapping("/hello/{name}")
     public String helloProduct(@PathVariable("name") final String name) {
+        if (log.isDebugEnabled()) {
+            log.debug("name is {}", name);
+        }
         return this.productApiService.getProductName(name);
     }
 

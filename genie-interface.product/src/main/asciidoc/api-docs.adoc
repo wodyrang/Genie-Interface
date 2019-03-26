@@ -28,9 +28,3 @@ API 관계없는 공통사항입니다.
 | `127.0.0.1:5555/api/product/**`
 |===
 
-= 상품
-== 상품 조회
-include::{snippets}/product-controller-test/상품_상세/http-request.adoc[]
-include::{snippets}/product-controller-test/상품_상세/path-parameters.adoc[]
-include::{snippets}/product-controller-test/상품_상세/http-response.adoc[]
-include::{snippets}/product-controller-test/상품_상세/response-fields.adoc[]
